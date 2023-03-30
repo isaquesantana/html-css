@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+        /* O Asterísco aplica as configurações para todos os elementos de forma universal.
+
+        * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        } */
+
+        body {
+            font-family: 'Ubuntu', sans;
+            background-color: lightgrey;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 10px;            
+            margin: 10px;
+        }
+
+        nav {
+            background-color: #3a3a3a;
+            padding: 5px;
+            box-shadow: 3px 3px 5px 0px rgba(2, 2, 2, 0.39);
+        }
+
+        nav > a {
+            color: white;
+            text-decoration: none;
+            padding: 3px;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+
+        }
+
+        article > aside {
+            background-color: #8d8d8d;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Tecnologia Programação Econômia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre HTML5</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea numquam quod magni quae deleniti, ducimus mollitia ipsam vel et harum maiores repudiandae vero praesentium quas necessitatibus! Accusantium rem voluptas molestias.</p>
+                <aside>
+                    <p>Escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Isaque Santana</p>
+    </footer>
+</body>
+</html>

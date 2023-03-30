@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="textarea">Isaque</textarea>
+    <button id="copy-button">Copiar</button>
+
+    <script>
+      const textarea = document.getElementById("textarea");
+      const copyButton = document.getElementById("copy-button");
+
+      copyButton.addEventListener("click", function() {
+        navigator.clipboard.writeText(textarea.value).then(function() {
+          console.log("Texto copiado para a área de transferência");
+        }, function(err) {
+          console.error("Erro ao copiar texto: ", err);
+        });
+      });
+    </script>
+</body>
+</html>

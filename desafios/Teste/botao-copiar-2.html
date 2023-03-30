@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos SOLU</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        .negrito {
+            font-weight: bold;
+        }
+
+        button{
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            border: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="text-container">
+
+        <p class="negrito">CNPJ</p>
+        <p id="text-1">39727139000177</p>
+        <button id="copy-1">Copiar</button>
+        
+        <br>
+        <p class="negrito">Razão Social</p>
+        <p id="text-2">SOLU GESTAO CORPORATIVA LTDA</p>
+        <button id="copy-2">Copiar</button>
+        
+        <br>
+        <p class="negrito">Endereço</p>
+        <p id="text-3">R DAS PAPARAUBAS, n 23</p>
+        <button id="copy-3">Copiar</button>
+
+        <br>
+        <p class="negrito">Bairro</p>
+        <p id="text-4">ARACAGY</p>
+        <button id="copy-4">Copiar</button>
+
+        <br>
+        <p class="negrito">CEP</p>
+        <p id="text-5">65110000</p>
+        <button id="copy-5">Copiar</button>
+
+        <br>
+        <p class="negrito">Endereço Eletrônico</p>
+        <p id="text-6">contato@solugestao.com.br</p>
+        <button id="copy-6">Copiar</button>
+
+      </div>
+      
+      <script>
+        const textContainer = document.getElementById("text-container");
+      
+        for (const text of textContainer.children) {
+          if (text.tagName === "BUTTON") {
+            text.addEventListener("click", function() {
+              const id = this.id.split("-")[1];
+              const textToCopy = document.getElementById(`text-${id}`).innerText;
+      
+              const tempInput = document.createElement("textarea");
+              tempInput.value = textToCopy;
+              document.body.appendChild(tempInput);
+              tempInput.select();
+              document.execCommand("copy");
+              document.body.removeChild(tempInput);
+            });
+          }
+        }
+      </script>
+
+
+
+</body>
+</html>
