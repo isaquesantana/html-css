@@ -3,4 +3,4 @@
 
 Estou apredendo a cirar sites. Espero conseguir trabalhar na área.
 
-<a href="https://isaquesantana.github.io/html-css/https://isaquesantana.github.io/html-css/index.html">Executar o exercício 014</a>
+<a href="isaquesantana.github.io/html-css/index.html">Executar o exercício 014</a>
