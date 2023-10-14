@@ -1,0 +1,8 @@
+Nomeclatura das pastas
+
+  3-a8-input
+  ^  ^   ^
+  |  |   |
+  |  |   |- nome do arquivo 
+  |  |----- número da aula
+  |-------- número do módulo
