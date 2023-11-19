@@ -1,8 +1,19 @@
 Nomeclatura das pastas
 
-  3-a8-input
-  ^  ^   ^
+Exemplo 1
+
+  3-8-input
+  ^ ^   ^
+  | |   |
+  | |   |- nome do arquivo 
+  | |----- número da aula
+  |-------- número do módulo
+
+Exemplo 2
+
+  3-8-7-input
+  ^ ^-^  ^
   |  |   |
   |  |   |- nome do arquivo 
-  |  |----- número da aula
+  |  |----- números das aulas
   |-------- número do módulo
